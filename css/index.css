@@ -28,6 +28,8 @@ body {
   aspect-ratio: 1/1;
   max-width: 70%;
   max-height: 70%;
+  user-select: none;
+  pointer-events: none;
 }
 
 .sheep-head-container {
@@ -36,7 +38,7 @@ body {
   width: 40%;
   left: 60%;
   bottom: 45%;
-  animation: neck-swing-animation 5s ease 0s infinite normal forwards;
+  animation: neck-swing-animation 40s ease 0s infinite normal forwards;
 }
 
 .sheep-fur {
@@ -88,13 +90,13 @@ body {
 
 @keyframes head-right-anim {
   50% {
-    width: 40%;
+    width: 35%;
   }
 }
 
 @keyframes head-left-anim {
   50% {
-    width: 60%;
+    width: 65%;
   }
 }
 
@@ -114,10 +116,14 @@ body {
   }
 
   45% {
-    transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(12deg);
   }
 
   75% {
-    transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(32deg);
+  }
+
+  85% {
+    transform: translateX(-6px) rotate(16deg);
   }
 }
